@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+    <h1>Weather App</h1>
+
+    <!-- Weather Section -->
+    <div id="weather" class="section">
+        <h2>Weather Information</h2>
+        <div id="weather-details">
+            <!-- Weather details will be injected here -->
+        </div>
+    </div>
+
+    <!-- News Section -->
+    <div id="news" class="section">
+        <h2>Latest News</h2>
+        <div id="news-details">
+            <!-- News articles will be injected here -->
+        </div>
+    </div>
+
+    <!-- Currency Section -->
+    <div id="currency" class="section">
+        <h2>Currency Exchange</h2>
+        <div id="currency-details">
+            <!-- Currency details will be injected here -->
+        </div>
+    </div>
+
+    <label for="city">Enter City:</label>
+    <input type="text" id="city" placeholder="e.g. Almaty">
+    <button id="fetchData">Fetch Data</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

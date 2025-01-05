@@ -1,0 +1,120 @@
+/* General Body and App Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #444;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+/* Weather Section Specific Styles */
+#weather-details {
+    font-size: 1.2em;
+    color: #555;
+    padding: 10px;
+    background-color: #e8f4f8;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#weather-details .temp {
+    font-size: 2em;
+    color: #1e90ff;
+    font-weight: bold;
+}
+
+#weather-details img {
+    width: 50px;
+    height: 50px;
+}
+
+/* News Section Specific Styles */
+#news-details {
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 20px;
+}
+
+#news-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#news-details li {
+    background-color: #e9f7fd;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#news-details li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+}
+
+#news-details li a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Currency Section Specific Styles */
+#currency-details {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 20px;
+}
+
+#currency-details .rate {
+    font-weight: bold;
+    color: #28a745;
+    font-size: 1.5em;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    #app {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .section h2 {
+        font-size: 1.3em;
+    }
+
+    #weather-details, #news-details, #currency-details {
+        font-size: 1em;
+    }
+}
