@@ -5,39 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 </head>
 <body>
 <div id="app">
     <h1>Weather App</h1>
 
-    <!-- Weather Section -->
     <div id="weather" class="section">
         <h2>Weather Information</h2>
         <div id="weather-details">
-            <!-- Weather details will be injected here -->
         </div>
     </div>
 
-    <!-- News Section -->
-    <div id="news" class="section">
-        <h2>Latest News</h2>
-        <div id="news-details">
-            <!-- News articles will be injected here -->
-        </div>
-    </div>
-
-    <!-- Currency Section -->
-    <div id="currency" class="section">
-        <h2>Currency Exchange</h2>
-        <div id="currency-details">
-            <!-- Currency details will be injected here -->
-        </div>
-    </div>
+    <div id="map" style="height: 400px; width: 100%;"></div>
 
     <label for="city">Enter City:</label>
     <input type="text" id="city" placeholder="e.g. Almaty">
     <button id="fetchData">Fetch Data</button>
+
+    <div id="news" class="section">
+        <h2>Latest News</h2>
+        <div id="news-details">
+
+        </div>
+    </div>
+
+    <div id="currency" class="section">
+        <h2>Currency Exchange</h2>
+        <div id="currency-details">
+
+        </div>
+    </div>
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>
